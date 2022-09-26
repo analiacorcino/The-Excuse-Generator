@@ -7,5 +7,22 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+  let who = ["the dog", "my granma", "his turtle", "my bird"];
+  let what = ["eat", "pissed", "crushed", "broked"];
+  let when = [
+    "before the class",
+    "right in time",
+    "when I finished",
+    "during my lunch",
+    "while I was praying"
+  ];
+
+  let quien = Math.floor(Math.random(who) * who.length);
+  let que = Math.floor(Math.random(what) * what.length);
+  let cuando = Math.floor(Math.random(when) * when.length);
+
+  console.log(who[quien] + " " + what[que] + " " + when[cuando]);
+
+  return (document.getElementById("excuse").innerHTML =
+    who[quien] + " " + what[que] + " " + when[cuando]);
 };
